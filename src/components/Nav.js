@@ -4,17 +4,6 @@ import Icon from '../assets/logo.svg';
 import styled from 'styled-components';
 import { Grid } from '../styles/Grid';
 
-const Skip = styled.div`
-  /* text-align: center; */
-  a {
-    position: absolute;
-    transform: translateY(-500%);
-    :focus {
-      transform: translateY(0);
-    }
-  }
-`;
-
 const StyledNav = styled.nav`
   grid-area: nav;
   ul {
@@ -57,9 +46,6 @@ const Brand = styled.div`
 export default function Nav() {
   return (
     <header>
-      <Skip>
-        <Link to="#content">Skip to content</Link>
-      </Skip>
       <StyledNav>
         <Grid>
           <Brand>
