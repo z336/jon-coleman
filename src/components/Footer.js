@@ -6,5 +6,11 @@ const StyledFooter = styled.footer`
 `;
 
 export default function Footer() {
-  return <StyledFooter>footer</StyledFooter>;
+  return (
+    <StyledFooter>
+      <div>
+        <small>definitely not © {new Date().getFullYear()}</small>
+      </div>
+    </StyledFooter>
+  );
 }

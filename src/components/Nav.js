@@ -8,7 +8,7 @@ const StyledNav = styled.nav`
   grid-area: nav;
   ul {
     place-self: center;
-    border-left: 2px solid var(--white);
+    border-left: 3px solid var(--white);
     list-style: none;
     li {
       padding-bottom: 0.5em;
@@ -35,6 +35,10 @@ const Brand = styled.div`
     :hover {
       background-color: transparent;
       color: currentColor;
+      outline: none;
+    }
+    :focus {
+      outline: none;
     }
   }
 `;

@@ -152,7 +152,7 @@ h3 {
 
 a {
   color: var(--white);
-  text-decoration: underline 2px;
+  text-decoration: underline 3.5px;
   transition: all 125ms ease-in-out;
 }
 
@@ -167,7 +167,7 @@ a:focus,
 button:focus {
   padding: 0.15em;
   margin: -0.15em;
-  outline: 2px solid var(--white);
+  outline: 3px dashed var(--white);
 }
 
 a:focus:not(:focus-visible),
@@ -192,8 +192,8 @@ button {
 }
 
 main {
-  border-top: 2px solid var(--white);
-  border-bottom: 2px solid var(--white);
+  border-top: 3px solid var(--white);
+  border-bottom: 3px solid var(--white);
   padding-top: 3rem;
   padding-bottom: 4rem;
 }
