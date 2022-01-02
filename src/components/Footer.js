@@ -9,7 +9,7 @@ export default function Footer() {
   return (
     <StyledFooter>
       <div>
-        <small>definitely not © {new Date().getFullYear()}</small>
+        <small>not © {new Date().getFullYear()}</small>
       </div>
     </StyledFooter>
   );

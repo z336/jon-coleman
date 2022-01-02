@@ -17,12 +17,7 @@ export default function Projects({ data }) {
       <HelmetTemplate title="Projects" />
       <article>
         <h1>Projects</h1>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
-          architecto ad eum, repellendus veritatis dolor reiciendis illo ea fuga
-          omnis culpa perferendis enim distinctio itaque eaque sed cumque
-          excepturi nam?
-        </p>
+        <p>Here are some of the projects I've been able to work on recently.</p>
         {posts.map(({ node: post }) => (
           <ProjectStack key={post.id}>
             <h2>

@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { Link } from 'gatsby';
 import HelmetTemplate from '../components/SEO';
 
 export default function Index() {
@@ -6,29 +7,19 @@ export default function Index() {
     <>
       <HelmetTemplate title="Home" />
       <article>
-        <h1>Hello</h1>
+        <h1>Hello, I'm Jon</h1>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero
-          eveniet, quibusdam, maxime reprehenderit a cum dignissimos officiis
-          explicabo esse,{' '}
-          <a
-            href="https://www.google.com"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            laudantium alias
-          </a>{' '}
-          exercitationem voluptates impedit quaerat facilis mollitia. Lorem
-          ipsum dolor sit amet consectetur adipisicing elit. Nihil vitae maiores
-          molestiae error sit ratione vel, quod itaque quisquam fugit asperiores
-          neque quae natus exercitationem dolore totam ex reprehenderit
-          officiis?
+          I am a technical writer and web designer here at the internet. I'm
+          interested in documentation and writing for the web, front end
+          development, web design, and accessibility. I also collect punk
+          records and try to get outside, preferably on a bike or a trail, as
+          often as I can.{' '}
         </p>
         <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores
-          dolor architecto dolore inventore tenetur, vel iste ducimus
-          voluptatibus fuga laborum consequuntur neque. Culpa rerum sint iste,
-          odio et illum incidunt?
+          If you're interested, you can read more{' '}
+          <Link to="/about">about me</Link>, see some of my projects{' '}
+          <Link to="/projects">right here</Link>, and read{' '}
+          <Link to="/writing">my thoughts</Link> on all kinds of things.
         </p>
       </article>
     </>

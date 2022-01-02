@@ -25,10 +25,8 @@ export default function Writing({ data }) {
       <article>
         <h1>Writing</h1>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde aut
-          exercitationem, soluta perferendis quas repellat magni expedita
-          consequatur placeat officia debitis sint animi eos quos natus ullam.
-          Voluptate, odio totam.
+          I think about all kinds of things from web to records to life and back
+          again. I'll try to capture some of those thoughts here.
         </p>
         <WritingStack>
           <ul>
