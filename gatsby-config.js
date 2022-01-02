@@ -5,6 +5,7 @@ module.exports = {
   },
   plugins: [
     'gatsby-plugin-styled-components',
+    'gatsby-plugin-preload-fonts',
     'gatsby-plugin-image',
     {
       resolve: 'gatsby-plugin-react-svg',
