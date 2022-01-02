@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { Link } from 'gatsby';
-import Logo from './Logo';
+// import Logo from './Logo';
+import Icon from '../assets/logo.svg';
 import styled from 'styled-components';
 import { Grid } from '../styles/Grid';
 
@@ -27,11 +28,27 @@ const StyledNav = styled.nav`
   }
 `;
 
+const Brand = styled.div`
+  place-self: center;
+  a {
+    text-decoration: none;
+    :hover {
+      background-color: transparent;
+      color: currentColor;
+    }
+  }
+  svg {
+    max-width: 8rem;
+  }
+`;
+
 export default function Nav() {
   return (
     <StyledNav>
       <Grid>
-        <Logo />
+        <Brand>
+          <Icon />
+        </Brand>
         <ul>
           <li>
             <Link to="/" activeClassName="active">

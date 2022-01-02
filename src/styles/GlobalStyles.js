@@ -1,4 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
+import AlteHaasGroteskRegular from '../assets/fonts/AlteHaasGroteskRegular.ttf';
 
 const GlobalStyles = createGlobalStyle`
 /* /// Resets /// */
@@ -86,7 +87,7 @@ select {
 
 @font-face {
   font-family: 'AlteHaasGroteskRegular';
-  src: url('../assets/fonts/AlteHaasGroteskRegular.ttf');
+  src: url(${AlteHaasGroteskRegular}) format('ttf');
   font-style: normal;
   font-weight: 400;
   font-display: swap;
