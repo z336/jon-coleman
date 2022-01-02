@@ -1,5 +1,6 @@
 import * as React from 'react';
 import { Link } from 'gatsby';
+import Logo from './Logo';
 import styled from 'styled-components';
 import { Grid } from '../styles/Grid';
 
@@ -19,21 +20,9 @@ const StyledNav = styled.nav`
       .active {
         background-color: var(--white);
         color: var(--black);
+        padding: 0.15em;
+        margin: -0.15em;
       }
-    }
-  }
-`;
-
-const Brand = styled.p`
-  place-self: center;
-  font-family: 'Poppins';
-  font-size: var(--font-size-big);
-  text-transform: uppercase;
-  a {
-    text-decoration: none;
-    :hover {
-      background-color: transparent;
-      color: currentColor;
     }
   }
 `;
@@ -42,11 +31,7 @@ export default function Nav() {
   return (
     <StyledNav>
       <Grid>
-        <Brand>
-          <Link to="/" tabIndex="-1">
-            Jon Coleman
-          </Link>
-        </Brand>
+        <Logo />
         <ul>
           <li>
             <Link to="/" activeClassName="active">
