@@ -27,7 +27,9 @@ export default function Layout({ children }) {
       <GlobalStyles />
       <SiteLayout>
         <Nav />
-        <Main>{children}</Main>
+        <Main id="content" tabIndex="-1">
+          {children}
+        </Main>
         <Footer />
       </SiteLayout>
     </>

@@ -4,6 +4,17 @@ import Icon from '../assets/logo.svg';
 import styled from 'styled-components';
 import { Grid } from '../styles/Grid';
 
+const Skip = styled.div`
+  /* text-align: center; */
+  a {
+    position: absolute;
+    transform: translateY(-500%);
+    :focus {
+      transform: translateY(0);
+    }
+  }
+`;
+
 const StyledNav = styled.nav`
   grid-area: nav;
   ul {
@@ -45,36 +56,41 @@ const Brand = styled.div`
 
 export default function Nav() {
   return (
-    <StyledNav>
-      <Grid>
-        <Brand>
-          <Link to="/" tabIndex="-1">
-            <Icon />
-          </Link>
-        </Brand>
-        <ul>
-          <li>
-            <Link to="/" activeClassName="active">
-              Home
+    <header>
+      <Skip>
+        <Link to="#content">Skip to content</Link>
+      </Skip>
+      <StyledNav>
+        <Grid>
+          <Brand>
+            <Link to="/" tabIndex="-1" aria-label="Jon Coleman">
+              <Icon />
             </Link>
-          </li>
-          <li>
-            <Link to="/about" activeClassName="active">
-              About
-            </Link>
-          </li>
-          <li>
-            <Link to="/projects" activeClassName="active">
-              Projects
-            </Link>
-          </li>
-          <li>
-            <Link to="/writing" activeClassName="active">
-              Writing
-            </Link>
-          </li>
-        </ul>
-      </Grid>
-    </StyledNav>
+          </Brand>
+          <ul>
+            <li>
+              <Link to="/" activeClassName="active">
+                Home
+              </Link>
+            </li>
+            <li>
+              <Link to="/about" activeClassName="active">
+                About
+              </Link>
+            </li>
+            <li>
+              <Link to="/projects" activeClassName="active">
+                Projects
+              </Link>
+            </li>
+            <li>
+              <Link to="/writing" activeClassName="active">
+                Writing
+              </Link>
+            </li>
+          </ul>
+        </Grid>
+      </StyledNav>
+    </header>
   );
 }

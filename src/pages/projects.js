@@ -5,7 +5,8 @@ import styled from 'styled-components';
 
 const ProjectStack = styled(StackDiv)`
   padding: 1rem;
-  border: 2px solid var(--white);
+  margin-top: 2rem;
+  border: 3px solid var(--white);
 `;
 
 export default function Projects({ data }) {
