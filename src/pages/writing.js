@@ -14,7 +14,7 @@ export default function Writing({ data }) {
       </p>
       <ul>
         {posts.map(({ node: post }) => (
-          <li>
+          <li key={post.id}>
             <h3>
               <Link to={post.fields.slug}>{post.frontmatter.title}</Link>
             </h3>

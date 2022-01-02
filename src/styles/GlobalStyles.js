@@ -87,7 +87,7 @@ select {
 
 @font-face {
   font-family: 'AlteHaasGroteskRegular';
-  src: url(${AlteHaasGroteskRegular}) format('ttf');
+  src: url(${AlteHaasGroteskRegular});
   font-style: normal;
   font-weight: 400;
   font-display: swap;
