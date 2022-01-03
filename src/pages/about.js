@@ -27,7 +27,7 @@ export default function About() {
           <li>Git, CLI, & tools like NPM</li>
         </ul>
         <p>
-          My personal Github repository is located{' '}
+          My personal GitHub repository is located{' '}
           <a
             href="https://github.com/z336"
             traget="_blank"
