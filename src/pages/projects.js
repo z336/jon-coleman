@@ -24,6 +24,11 @@ export default function Projects({ data }) {
               <Link to={post.fields.slug}>{post.frontmatter.title}</Link>
             </h2>
             <p>{post.frontmatter.description}</p>
+            <ul>
+              {post.frontmatter.tags.map((tag) => {
+                return <li>{tag}</li>;
+              })}
+            </ul>
           </ProjectStack>
         ))}
       </article>
@@ -43,7 +48,6 @@ export const pageQuery = graphql`
           frontmatter {
             title
             description
-            alt
             category
             tags
           }
