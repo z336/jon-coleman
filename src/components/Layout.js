@@ -2,8 +2,8 @@ import * as React from 'react';
 import Nav from './Nav';
 import Footer from './Footer';
 import GlobalStyles from '../styles/GlobalStyles';
+import Typography from '../styles/Typography';
 import styled from 'styled-components';
-import '@fontsource/poppins/700.css';
 
 const SiteLayout = styled.div`
   min-height: 100vh;
@@ -25,6 +25,7 @@ export default function Layout({ children }) {
   return (
     <>
       <GlobalStyles />
+      <Typography />
       <SiteLayout>
         <Nav />
         <Main>{children}</Main>

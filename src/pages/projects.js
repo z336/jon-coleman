@@ -26,7 +26,7 @@ export default function Projects({ data }) {
             <p>{post.frontmatter.description}</p>
             <ul>
               {post.frontmatter.tags.map((tag) => {
-                return <li>{tag}</li>;
+                return <li key={post.id}>{tag}</li>;
               })}
             </ul>
           </ProjectStack>

@@ -1,7 +1,7 @@
 import { createGlobalStyle } from 'styled-components';
-import AlteHaasGroteskRegular from '../assets/fonts/AlteHaasGroteskRegular.ttf';
 
 const GlobalStyles = createGlobalStyle`
+
 /* /// Resets /// */
 
 /* Box sizing rules */
@@ -83,15 +83,6 @@ select {
   }
 }
 
-/* /// Fonts /// */
-
-@font-face {
-  font-family: 'AlteHaasGroteskRegular';
-  src: url(${AlteHaasGroteskRegular});
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-}
 
 /* /// Global settings /// */
 
@@ -100,9 +91,6 @@ select {
   --white: #f9f9f6;
   --measure: 60ch;
   --gutter: 1rem;
-  --alte: 'AlteHaasGroteskRegular', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',
-    sans-serif;
   --font-size-base: 1rem;
   --font-size-bigger: 1.563rem;
   --font-size-biggish: 1.953rem;
@@ -128,51 +116,6 @@ body {
   padding: 1.5rem;
   background: var(--black);
   color: var(--white);
-  font-family: var(--alte);
-}
-
-h1,
-h2,
-h3 {
-  font-family: 'Poppins';
-  text-transform: uppercase;
-}
-
-h1 {
-  font-size: var(--font-size-big);
-}
-
-h2 {
-  font-size: var(--font-size-biggish);
-}
-
-h3 {
-  font-size: var(--font-size-bigger);
-}
-
-a {
-  color: var(--white);
-  text-decoration: underline 3.5px;
-  transition: all 125ms ease-in-out;
-}
-
-a:hover {
-  background: var(--white);
-  color: var(--black);
-  padding: 0.15em;
-  margin: -0.15em;
-}
-
-a:focus,
-button:focus {
-  padding: 0.15em;
-  margin: -0.15em;
-  outline: 3px dashed var(--white);
-}
-
-a:focus:not(:focus-visible),
-button:focus:not(:focus-visible) {
-  outline: none;
 }
 
 ::selection {

@@ -13,7 +13,9 @@ const StyledNav = styled.nav`
     li {
       padding-bottom: 0.5em;
       a {
-        font-family: 'Poppins';
+        font-family: Poppins, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+          Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',
+          sans-serif;
         text-transform: uppercase;
         text-decoration: none;
       }
