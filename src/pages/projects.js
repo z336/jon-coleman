@@ -25,8 +25,8 @@ export default function Projects({ data }) {
             </h2>
             <p>{post.frontmatter.description}</p>
             <ul>
-              {post.frontmatter.tags.map((tag) => {
-                return <li key={post.id}>{tag}</li>;
+              {post.frontmatter.tags.map((tag, index) => {
+                return <li key={index}>{tag}</li>;
               })}
             </ul>
           </ProjectStack>
