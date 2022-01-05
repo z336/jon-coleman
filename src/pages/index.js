@@ -10,10 +10,10 @@ export default function Index() {
         <h1>Hello, I'm Jon</h1>
         <p>
           I am a technical writer and web designer here at the internet. I'm
-          interested in documentation and writing for the web, frontend
-          development, web design, and accessibility. I also collect punk
-          records and try to get outside, preferably on a bike or a trail, as
-          often as I can.{' '}
+          interested in documentation and writing for the web, front-end web
+          development, web design, and accessibility. I also pry myself up from
+          my desk sometimes to collect punk records and get outside, preferably
+          on a bike or a trail.{' '}
         </p>
         <p>
           If you're interested, you can read more{' '}
