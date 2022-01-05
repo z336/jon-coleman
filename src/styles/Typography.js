@@ -9,7 +9,7 @@ const Typography = createGlobalStyle`
   src: url(${Poppins});
   font-style: normal;
   font-weight: 700;
-  font-display: optional;
+  font-display: block;
 }
 
 @font-face {
