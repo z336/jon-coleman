@@ -9,7 +9,7 @@ const Typography = createGlobalStyle`
   src: url(${Poppins});
   font-style: normal;
   font-weight: 700;
-  font-display: swap;
+  font-display: block;
 }
 
 @font-face {
@@ -17,7 +17,7 @@ const Typography = createGlobalStyle`
   src: url(${AlteHaasGroteskRegular});
   font-style: normal;
   font-weight: 400;
-  font-display: swap;
+  font-display: block;
 }
 
 body {
