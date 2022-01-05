@@ -17,7 +17,7 @@ const Typography = createGlobalStyle`
   src: url(${AlteHaasGroteskRegular});
   font-style: normal;
   font-weight: 400;
-  font-display: optional;
+  font-display: block;
 }
 
 body {
