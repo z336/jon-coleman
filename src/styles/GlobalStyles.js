@@ -29,15 +29,10 @@ dd {
   margin: 0;
 }
 
-/* If a list has a class, remove default padding and styles */
+/* If a list has a class, remove default padding */
 ul[class],
 ol[class] {
   padding: 0;
-}
-
-/* Set core root defaults */
-html:focus-within {
-  scroll-behavior: smooth;
 }
 
 /* Set core body defaults */
