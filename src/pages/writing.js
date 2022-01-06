@@ -1,10 +1,9 @@
 import * as React from 'react';
 import { Link, graphql } from 'gatsby';
 import styled from 'styled-components';
-import { StackDiv } from '../styles/Stack';
 import HelmetTemplate from '../components/SEO';
 
-const WritingStack = styled(StackDiv)`
+const WritingStack = styled.div`
   ul {
     list-style-type: none;
     padding: 0;

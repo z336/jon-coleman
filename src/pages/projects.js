@@ -1,13 +1,15 @@
 import * as React from 'react';
 import { Link, graphql } from 'gatsby';
-import { StackDiv } from '../styles/Stack';
 import styled from 'styled-components';
 import HelmetTemplate from '../components/SEO';
 
-const ProjectStack = styled(StackDiv)`
-  padding: 1rem;
+const ProjectStack = styled.div`
+  padding: 2rem;
   margin-top: 2rem;
   border: 3px solid var(--white);
+  > * + * {
+    margin-top: 1rem;
+  }
 `;
 
 export default function Projects({ data }) {
