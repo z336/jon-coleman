@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import HelmetTemplate from '../components/SEO';
 
 const ProjectStack = styled.div`
-  padding: 2rem;
+  padding: 1.5rem;
   margin-top: 2rem;
   border: 3px solid var(--white);
   > * + * {
