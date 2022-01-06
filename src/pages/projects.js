@@ -1,16 +1,7 @@
 import * as React from 'react';
 import { Link, graphql } from 'gatsby';
-import styled from 'styled-components';
 import HelmetTemplate from '../components/SEO';
-
-const ProjectStack = styled.div`
-  padding: 1.5rem;
-  margin-top: 2rem;
-  border: 3px solid var(--white);
-  > * + * {
-    margin-top: 1rem;
-  }
-`;
+import * as styles from './projects.module.scss';
 
 export default function Projects({ data }) {
   const { edges: posts } = data.allMdx;
@@ -21,7 +12,7 @@ export default function Projects({ data }) {
         <h1>Projects</h1>
         <p>Here are some of the projects I've been able to work on recently.</p>
         {posts.map(({ node: post }) => (
-          <ProjectStack key={post.id}>
+          <div className={styles.projects} key={post.id}>
             <h2>
               <Link to={post.fields.slug}>{post.frontmatter.title}</Link>
             </h2>
@@ -31,7 +22,7 @@ export default function Projects({ data }) {
                 return <li key={index}>{tag}</li>;
               })}
             </ul>
-          </ProjectStack>
+          </div>
         ))}
       </article>
     </>

@@ -1,20 +1,7 @@
 import * as React from 'react';
 import { Link, graphql } from 'gatsby';
-import styled from 'styled-components';
 import HelmetTemplate from '../components/SEO';
-
-const WritingStack = styled.div`
-  ul {
-    list-style-type: none;
-    padding: 0;
-    li {
-      margin-top: 2rem;
-      :first-child {
-        margin-top: 0;
-      }
-    }
-  }
-`;
+import * as styles from './writing.module.scss';
 
 export default function Writing({ data }) {
   const { edges: posts } = data.allMdx;
@@ -27,7 +14,7 @@ export default function Writing({ data }) {
           I think about all kinds of things from web to records to life and back
           again. I'll try to capture some of those thoughts here.
         </p>
-        <WritingStack>
+        <div className={styles.writing}>
           <ul>
             {posts.map(({ node: post }) => (
               <li key={post.id}>
@@ -38,7 +25,7 @@ export default function Writing({ data }) {
               </li>
             ))}
           </ul>
-        </WritingStack>
+        </div>
       </article>
     </>
   );

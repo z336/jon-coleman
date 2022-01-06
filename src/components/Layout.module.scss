@@ -1,0 +1,23 @@
+.siteLayout {
+  min-height: 100vh;
+  margin: 0 auto 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas:
+    'nav'
+    'main'
+    'footer';
+}
+
+.navArea {
+  grid-area: nav;
+}
+
+.mainArea {
+  grid-area: main;
+}
+
+.footerArea {
+  grid-area: footer;
+}

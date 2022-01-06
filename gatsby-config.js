@@ -4,7 +4,7 @@ module.exports = {
     title: 'Jon Coleman',
   },
   plugins: [
-    'gatsby-plugin-styled-components',
+    'gatsby-plugin-sass',
     'gatsby-plugin-preload-fonts',
     'gatsby-plugin-image',
     {
@@ -38,14 +38,6 @@ module.exports = {
     },
     'gatsby-plugin-sharp',
     'gatsby-transformer-sharp',
-    // {
-    //   resolve: `gatsby-source-filesystem`,
-    //   options: {
-    //     name: `images`,
-    //     path: `${__dirname}/src/assets/images/`,
-    //   },
-    //   __key: `images`,
-    // },
     {
       resolve: `gatsby-source-filesystem`,
       options: {

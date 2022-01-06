@@ -18,14 +18,6 @@ export default function PostTemplate({ data: { mdx } }) {
           <h1>{title}</h1>
           <article>
             <MDXRenderer>{body}</MDXRenderer>
-            <div>
-              <button
-                onClick={() => window.history.back()}
-                aria-label="Go back"
-              >
-                &larr; Back
-              </button>
-            </div>
           </article>
         </MDXProvider>
       </article>
