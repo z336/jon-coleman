@@ -153,11 +153,13 @@ a {
   transition: all 125ms ease-in-out;
 }
 
-a:hover {
-  background: var(--white);
-  color: var(--black);
-  padding: 0.15em;
-  margin: -0.15em;
+@media (hover: hover) {
+  a:hover {
+    background: var(--white);
+    color: var(--black);
+    padding: 0.15em;
+    margin: -0.15em;
+  }
 }
 
 a:focus,
