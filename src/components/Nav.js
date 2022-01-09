@@ -5,7 +5,7 @@ import * as styles from './Nav.module.scss';
 
 export default function Nav() {
   return (
-    <header>
+    <header id="header">
       <nav className={styles.primaryNavigation}>
         <div className={styles.grid}>
           <div className={styles.brand}>
