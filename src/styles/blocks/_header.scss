@@ -19,7 +19,9 @@
     display: flex;
     justify-content: space-between;
     gap: 0.5rem;
-    @media (max-width: 400px) {
+    @media (max-width: 768px) {
+      border-left: 3px solid;
+      padding-left: 2rem;
       flex-direction: column;
     }
     list-style: none;
