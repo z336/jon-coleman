@@ -13,11 +13,15 @@ export default function PostTemplate({ data: { mdx } }) {
   return (
     <>
       <HelmetTemplate title={title} />
-      <article>
+      <article className="padding-bottom">
         <MDXProvider components={shortcodes}>
-          <h1>{title}</h1>
-          <article>
-            <MDXRenderer>{body}</MDXRenderer>
+          <div className="title | padding-left | padding-right">
+            <h1>{title}</h1>
+          </div>
+          <article className="padding-left | padding-right | padding-top">
+            <div className="content | flow">
+              <MDXRenderer>{body}</MDXRenderer>
+            </div>
           </article>
         </MDXProvider>
       </article>

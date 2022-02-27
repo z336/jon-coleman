@@ -1,21 +1,23 @@
 import * as React from 'react';
 import { Link, graphql } from 'gatsby';
 import HelmetTemplate from '../components/SEO';
-import * as styles from './writing.module.scss';
 
 export default function Writing({ data }) {
   const { edges: posts } = data.allMdx;
   return (
     <>
       <HelmetTemplate title="Writing" />
-      <article>
-        <h1>Writing</h1>
-        <p>
-          I think about all kinds of things from web to records to life and back
-          again. I'll try to capture some of those thoughts here.
-        </p>
-        <div className={styles.writing}>
-          <ul>
+      <article className="padding-bottom">
+        <div className="title | padding-left | padding-right">
+          <h1>Writing</h1>
+        </div>
+        <article className="flow | padding-left | padding-right">
+          <div className="padding-top | padding-bottom">
+            <p>
+              Subscribe with <a href="/rss.xml">RSS</a>.
+            </p>
+          </div>
+          <ul className="words | flow">
             {posts.map(({ node: post }) => (
               <li key={post.id}>
                 <h2>
@@ -25,7 +27,7 @@ export default function Writing({ data }) {
               </li>
             ))}
           </ul>
-        </div>
+        </article>
       </article>
     </>
   );

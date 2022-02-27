@@ -1,16 +1,15 @@
 import * as React from 'react';
-import Nav from './Nav';
+import '../styles/global.scss';
+import Header from './Header';
 import Footer from './Footer';
-import '../styles/GlobalStyles.scss';
-import * as styles from './Layout.module.scss';
 
 export default function Layout({ children }) {
   return (
     <>
-      <div className={styles.siteLayout}>
-        <Nav className={styles.navArea} />
-        <main className={styles.mainArea}>{children}</main>
-        <Footer className={styles.footerArea} />
+      <div className="wrapper">
+        <Header />
+        <main className="border-top | border-bottom">{children}</main>
+        <Footer />
       </div>
     </>
   );

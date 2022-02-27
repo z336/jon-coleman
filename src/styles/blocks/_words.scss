@@ -1,0 +1,8 @@
+.words {
+  padding: 0;
+  @media (min-width: 768px) {
+    margin-left: 5rem;
+    padding-left: 5rem;
+    border-left: 3px solid;
+  }
+}
