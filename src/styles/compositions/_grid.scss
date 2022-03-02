@@ -1,6 +1,6 @@
 .grid {
   display: grid;
-  gap: var(--gutter);
+  gap: 1.5rem;
 }
 
 @supports (width: min(400px, 100%)) {
