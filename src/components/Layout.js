@@ -8,7 +8,7 @@ export default function Layout({ children }) {
     <>
       <div className="wrapper">
         <Header />
-        <main className="border-top | border-bottom">{children}</main>
+        <main className="border-bottom">{children}</main>
         <Footer />
       </div>
     </>

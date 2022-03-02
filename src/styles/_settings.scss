@@ -2,7 +2,10 @@
   --black: #111111;
   --white: #f9f9f6;
   --measure: 60ch;
-  --gutter: 1.5rem;
+  --gutter: 2.75rem;
+  @media (max-width: 768px) {
+    --gutter: 1.5rem;
+  }
   --vertical-space: 3rem;
   --step--3: 0.512rem;
   --step--2: 0.64rem;

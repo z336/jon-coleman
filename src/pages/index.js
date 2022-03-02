@@ -6,7 +6,7 @@ export default function Index() {
   return (
     <>
       <HelmetTemplate title="Home" />
-      <article className="home | padding-bottom">
+      <article className="home | border-top | padding-bottom">
         <div className="content | flow | padding-top | padding-left | padding-right">
           <h1>Hello, I'm Jon</h1>
           <p>
