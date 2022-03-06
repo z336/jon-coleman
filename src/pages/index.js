@@ -10,10 +10,10 @@ export default function Index() {
         <div className="content | flow | padding-top | padding-left | padding-right">
           <h1>Hello, I'm Jon</h1>
           <p>
-            I am a technical writer and web designer here at the internet. I'm
+            I am a technical writer and web developer here at the internet. I'm
             interested in documentation and writing for the web, front-end web
-            development, web design, and accessibility. I also like to collect
-            punk records and get outside, preferably on a bike or a trail.{' '}
+            development, design, and accessibility. I also like to collect punk
+            records and get outside, preferably on a bike or a trail.{' '}
           </p>
           <p>
             If you're interested, you can read more{' '}
